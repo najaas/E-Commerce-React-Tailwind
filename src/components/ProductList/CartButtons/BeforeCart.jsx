@@ -7,7 +7,7 @@ function BeforeCart({product}) {
 
   return (
     <div className='before-cart'>
-      <button className='add-cart-button' onClick={ () => dispatch(addToCart(product)) }>Add to cart</button>
+      <button className='add-cart-button' onClick={ () => dispatch(addToCart(product))}>Add to cart</button>
     </div>
   )
 }

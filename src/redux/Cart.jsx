@@ -1,6 +1,5 @@
 const INITIAL_STATE = {
     cartList:[],
-    cartCount:0,
 };
 
 import {createSlice} from "@reduxjs/toolkit"

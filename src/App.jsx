@@ -1,17 +1,23 @@
-
-import './App.css'
-import Header from './components/Header/Header'
-import ProductList from './components/ProductList/ProductList'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProductList from "./components/ProductList/ProductList";
+import CartList from "./components/ProductList/CartList";
+import UserLayout from "./Layout/UserLayout";
 
 function App() {
 
 
   return (
     <>
-    <Header/>
-    <ProductList/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<UserLayout />}>
+            <Route path="/" element={<ProductList />} />
+            <Route path="/cart" element={<CartList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -13,7 +13,7 @@ function cartButtons({ product }) {
     
     <>
       {cartCount > 0 ? (
-        <AfterCart productID={product?.id} cartCount={cartCount} />
+        <AfterCart product={product} productID={product?.id} cartCount={cartCount} />
       ) : (
         <BeforeCart product={product} />
       )}
