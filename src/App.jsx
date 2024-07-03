@@ -1,12 +1,15 @@
-import React from 'react'
+
 import './App.css'
-import Navbar from './Components/Header/navbar'
+import Header from './components/Header/Header'
+import ProductList from './components/ProductList/ProductList'
 
 function App() {
 
+
   return (
     <>
-      <Navbar />
+    <Header/>
+    <ProductList/>
     </>
   )
 }
